@@ -1,0 +1,32 @@
+.textarea_wrap {
+  position: relative;
+  margin: 10px;
+  .top_wrap {
+    display: flex;
+    align-items: center;
+    & .line {
+      width: 6px;
+      height: 36px;
+      background-color: #6190e8;
+      border-radius: 8px;
+    }
+    & .title {
+      margin-left: 6px;
+      color: #000;
+      margin-top: 14px;
+      padding-top: 10px;
+    }
+  }
+  .textarea_container {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #C5D9E8;
+    border-radius: 8px;
+  }
+  .textarea_footer {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    color: #999;
+  }
+}
