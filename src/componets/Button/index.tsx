@@ -5,7 +5,7 @@ import '../../styles/button.scss'
 const QtButton = (props: QtButtonProps) => {
   const { btnText, customClass } = props
   return (
-    <Button className={`btn_class_container ${customClass}`}>{btnText}</Button>
+    <Button {...props} className={`btn_class_container ${customClass}`}>{btnText}</Button>
   )
 }
 
