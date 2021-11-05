@@ -1,5 +1,5 @@
 import { Button } from '@tarojs/components'
-import { QtButtonProps } from '../../types/ButtonProps'
+import { QtButtonProps } from '../../../types/ButtonProps'
 import '../../styles/button.scss'
 
 const QtButton = (props: QtButtonProps) => {
