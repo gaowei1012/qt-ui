@@ -4,17 +4,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-// const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
-
-const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   mode: 'development',
   entry: './src/index.ts',
   watch: true, // 监听代码更新
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'lib'),
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, '_bundles'),
     library: 'qt-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true,
@@ -46,14 +43,14 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
 
             options: {
               sourceMap: true,
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
 
             options: {
               sourceMap: true,
@@ -67,13 +64,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new WebpackManifestPlugin(),
     new webpack.ProgressPlugin(),
-    // new MiniCssExtractPlugin({
-    //   filename: devMode ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    // }),
-    // new OptimizeCssAssetsWebpackPlugin({
-    //   filename: 'index.css',
-    // }),
     new MiniCssExtractPlugin({ filename: 'index.css' }),
   ],
   optimization: {

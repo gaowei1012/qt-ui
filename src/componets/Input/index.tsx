@@ -1,5 +1,5 @@
 import { View, Text, Image, Input } from '@tarojs/components'
-import { QtInputProps } from '../../../types/InputProps'
+import { QtInputProps } from '../../types/InputProps'
 import '../../styles/input.scss'
 
 const QtInput = (props: QtInputProps) => {
