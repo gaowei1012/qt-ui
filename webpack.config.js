@@ -10,8 +10,8 @@ module.exports = {
   entry: './src/index.ts',
   watch: true, // 监听代码更新
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, '_bundles'),
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist'),
     library: 'qt-ui',
     libraryTarget: 'umd',
     umdNamedDefine: true,
@@ -34,6 +34,11 @@ module.exports = {
         include: [path.resolve(__dirname, 'src')],
         exclude: [/node_modules/],
       },
+      // {
+      //   test: /\.s[ac]ss$/i,
+      //   use: ['style-loader', 'css-loader', 'sass-loader'],
+      // },
+      
       {
         test: /.(scss|css)$/,
 
