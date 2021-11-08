@@ -1,6 +1,6 @@
 import { Textarea, View } from '@tarojs/components'
-import { QtTextareaProps } from '../../../types/TextareaProps'
-import '../../style/textarea.scss'
+import { QtTextareaProps } from '../../types/TextareaProps'
+import '../../styles/textarea.scss'
 
 const QtTextarea = (props: QtTextareaProps) => {
   const {

@@ -1,31 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "removeComments": false,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "rootDir": ".",
-    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2015", "DOM"],
     "allowJs": true,
-    "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "global.d.ts"
-    ]
+    
+    // "declaration": true, // 生成 .d.ts 文件
+    // "declarationMap": false,
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "jsx": "react-jsx"
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "compileOnSave": false
+  "awesomeTypescriptLoaderOptions": {
+    "useTranspileModule": true
+  },
+  "files": ["src/index.ts"],
+  "exclude": ["node_modules"]
 }

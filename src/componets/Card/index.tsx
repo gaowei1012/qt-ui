@@ -1,5 +1,5 @@
 import { View } from '@tarojs/components'
-import { CardProps } from '../../../types/CardProps'
+import { CardProps } from '../../types/CardProps'
 import '../../styles/card.scss'
 
 const QtCard = (props: CardProps) => {
