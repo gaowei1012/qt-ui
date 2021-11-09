@@ -1,6 +1,6 @@
+import React from 'react'
 import { Button } from '@tarojs/components'
 import { QtButtonProps } from '../../types/ButtonProps'
-import '../../styles/button.scss'
 
 const QtButton = (props: QtButtonProps) => {
   const { btnText, customClass } = props

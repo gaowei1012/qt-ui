@@ -1,3 +1,4 @@
+import React from 'react'
 import { Checkbox, Text } from '@tarojs/components'
 import { QtCheckboxProps } from '../../types/CheckboxProps'
 

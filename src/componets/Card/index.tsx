@@ -1,6 +1,6 @@
+import React from 'react'
 import { View } from '@tarojs/components'
 import { CardProps } from '../../types/CardProps'
-import '../../styles/card.scss'
 
 const QtCard = (props: CardProps) => {
   const { content, title, extra, onClick, customClass } = props

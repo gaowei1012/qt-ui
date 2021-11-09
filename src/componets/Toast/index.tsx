@@ -1,10 +1,11 @@
+import React from 'react'
 import { View } from '@tarojs/components'
 import { QtToastProps } from '../../types/ToastProp'
 
 const QtToast = (props: QtToastProps) => {
-  const { } = props
+  const { showToast } = props
   return (
-    <View>toast</View>
+    <View>{showToast ? '显示' : ''}</View>
   )
 }
 
